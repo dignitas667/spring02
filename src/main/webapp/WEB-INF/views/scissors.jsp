@@ -8,10 +8,12 @@
 </head>
 <body>
 <form method="post">
-난 누구지? 내 이름을 불러봐~!<br/>
-<input type="text" name="name" autofocus="autofocus" /><br/>
-나이 : <input type="number" value="20" /><br/>
-<button type="submit">say</button>
+<select name="you">
+	<option value="1">가위</option>
+	<option value="2">바위</option>
+	<option value="3">보</option>
+</select>
+<button type="submit">확인</button>
 </form>
 </body>
 </html>
