@@ -173,6 +173,11 @@
 		    <version>6.2.3.Final</version>
 		</dependency>
 
+		<dependency>
+		    <groupId>org.webjars.npm</groupId>
+		    <artifactId>jquery</artifactId>
+		    <version>3.6.0</version>
+		</dependency>
 		
 	</dependencies>
 	

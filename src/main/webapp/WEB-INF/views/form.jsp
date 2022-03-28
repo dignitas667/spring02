@@ -40,6 +40,12 @@
 	</td>
 </tr>
 <tr>
+	<th>1,2</th>
+	<td><input type="number" name="gen" value="${memoDTO.gen}"/><br/>
+		<form:errors path="gen" cssClass="msg_warn" />
+	</td>
+</tr>
+<tr>
 	<td colspan="2" align="center">
 		<input type="submit" value="입력완료" />
 	</td>

@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.Range;
 
 import lombok.Data;
 
@@ -20,4 +21,7 @@ public class MemoDTO implements Serializable {
 	
 	@Length(min = 1, max = 100)
 	private String content;
+	
+	@Range(min = 1, max = 2)
+	private int gen;
 }

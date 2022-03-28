@@ -27,6 +27,10 @@ param : ${param1}<br/>
 	<th>내용</th>
 	<td>${memoDTO.content}</td>
 </tr>
+<tr>
+	<th>gen</th>
+	<td>${memoDTO.gen}</td>
+</tr>
 </table>
 </body>
 </html>

@@ -16,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 @Controller
 public class MvcController7 {
 	@GetMapping("/form")
-	public void form() {}
+	public String form() { return "form"; }
 	
 	@PostMapping("/form")
 	// command 객체 전달...
@@ -33,5 +33,10 @@ public class MvcController7 {
 			//model.addAttribute("param1", param1);
 			return "form_result";
 		}
+	}
+	
+	@GetMapping("jquerytest")
+	public String jquerytest() {
+		return "jquerytest";
 	}
 }
