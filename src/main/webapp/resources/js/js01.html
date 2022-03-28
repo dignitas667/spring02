@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	const xhttp = new XMLHttpRequest();
+	console.log('readyState : ' + xhttp.readyState);
+	xhttp.onreadystatechange = function() {
+		console.log('readyState : ' + xhttp.readyState);
+		if (xhttp.readyState == 4) {
+			if (xhttp.status == 200) {
+				document.getElementById("demo").innerHTML = this.responseText;
+			}
+		}
+	}
+	xhttp.open("GET", "ajax_info.txt", true);
+	console.log('readyState : ' + xhttp.readyState);
+	xhttp.send();
+	console.log('readyState : ' + xhttp.readyState);
+</script>
+</head>
+<body>
+	[
+	<div id="demo"></div>
+	]
+</body>
+</html>

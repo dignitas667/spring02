@@ -8,6 +8,7 @@ import java.util.Map;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,9 +17,14 @@ public class MvcController8 {
 	@GetMapping(value = "hello_str", produces = MediaType.TEXT_PLAIN_VALUE)
 	//@ResponseBody
 	public String hello_str() {
-		return "Hello restful str~";
+		return "Hello restful str~(get)";
 	}
 	
+	@PostMapping(value = "hello_str", produces = MediaType.TEXT_PLAIN_VALUE)
+	//@ResponseBody
+	public String hello_str2() {
+		return "Hello restful str~(post)";
+	}
 	
 	@GetMapping(value = "hello_json", produces = MediaType.APPLICATION_JSON_VALUE)
 	//@ResponseBody
@@ -83,10 +89,5 @@ public class MvcController8 {
 		Map map =new HashMap();
 		map.put("members", members);
 		return map;
-	}
-	
-	
-	
-	
-	
+	}	
 }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" 
+src="/spring02/webjars/jquery/3.6.0/dist/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#btn').click(function(){
+		$.getJSON( "test.json", function( data ) {
+		  var items = [];
+		  $.each( data, function( key, val ) {
+		    items.push( "<li id='" + key + "'>" + val + "</li>" );
+		  });
+		 
+		  $('#show').append(items);
+		});
+	});
+});
+</script>
+</head>
+<body>
+<button type="button" id="btn">👍</button>
+<hr/>
+<div id="show"></div>
+</body>
+</html>
