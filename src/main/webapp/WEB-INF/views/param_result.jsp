@@ -22,6 +22,8 @@ body {
 </style>
 </head>
 <body>
+[${name}]
+<hr/>
 <div class="str">
 ${iam}
 </div>

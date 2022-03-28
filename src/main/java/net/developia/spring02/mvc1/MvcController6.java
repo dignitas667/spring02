@@ -11,7 +11,7 @@ public class MvcController6 {
 
 	@GetMapping("/want/{want}")
 	public String want(@PathVariable("want") String want, Model model) {
-		model.addAttribute("want", want + "가 하고 싶어요~");
+		model.addAttribute("iwant", want + "가 하고 싶어요~");
 		return "want";
 	}
 	

@@ -12,7 +12,8 @@
 </style>
 </head>
 <body>
+[${want}]<br/>
 <div id="want"><img src="${app}/resources/img/want.png" width="60%" /></div>
-<div class="say"><h3>${want}</h3></div>
+<div class="say"><h3>${iwant}</h3></div>
 </body>
 </html>

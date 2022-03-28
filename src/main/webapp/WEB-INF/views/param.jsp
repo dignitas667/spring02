@@ -12,6 +12,9 @@
 <input type="text" name="name" autofocus="autofocus" /><br/>
 나이 : <input type="number" value="20" /><br/>
 <button type="submit">say</button>
+<input type="radio" name="hobby" value="잠자기" />잠자기<br/>
+<input type="radio" name="hobby" value="뒹굴기" />뒹굴기<br/>
+<input type="radio" name="hobby" value="가위눌리기" />가위눌리기<br/>
 </form>
 </body>
 </html>
